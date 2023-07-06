@@ -1,0 +1,102 @@
+/* Custom Styling (Non-Tailwind Customization) */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cinzel+Decorative:wght@700&family=Gasoek+One&family=Permanent+Marker&family=Rowdies:wght@700&family=Silkscreen:wght@700&display=swap');
+
+@media (min-width: 900px) {
+    :root {
+        --shift-amt: 130;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --shift-amt: 60;
+    }
+}
+
+.iam-wrap, .iam-item{
+    height: calc(var(--shift-amt) * 1px);
+    line-height: calc(var(--shift-amt) * 1px);
+}
+
+.iam-wrap {
+    overflow: hidden;
+}
+
+.iam-item {
+    text-align: left;
+    font-family: 'Gasoek One', sans-serif;
+    font-size: 4vw;
+}
+
+.iam-move {
+    position:relative;
+    animation-name: shift;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.15s;
+}
+
+@keyframes shift {
+    00% { bottom: calc(var(--shift-amt) * 0px); } /* FIRST ITEM */
+    05% { bottom: calc(var(--shift-amt) * 0px); } /* DELAY */
+    20% { bottom: calc(var(--shift-amt) * 1px); } /* SECOND ITEM */
+    25% { bottom: calc(var(--shift-amt) * 1px); } /* DELAY */
+    40% { bottom: calc(var(--shift-amt) * 2px); } /* THIRD ITEM */
+    45% { bottom: calc(var(--shift-amt) * 2px); } /* DELAY */
+    60% { bottom: calc(var(--shift-amt) * 3px); } /* FOURTH ITEM */
+    65% { bottom: calc(var(--shift-amt) * 3px); } /* DELAY */
+    80% { bottom: calc(var(--shift-amt) * 4px); } /* FIFTH ITEM */
+    85% { bottom: calc(var(--shift-amt) * 4px); } /* DELAY */
+    100% { bottom: calc(var(--shift-amt) * 5px); } /* SIXTH ITEM */
+}
+
+.hi-font {
+    opacity: 0%;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 20vw;
+    line-height: 20vw;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.1s;
+}
+
+.iam-top {
+    opacity: 0%;
+    line-height: 1em;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.0s;
+    vertical-align: bottom;
+}
+
+
+.name-font {
+    font-family: 'Gasoek One', sans-serif;
+    font-size: 5vw;
+}
+
+.biz-font {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 5.5vw;
+}
+
+.dsn-font {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5.5vw;
+}
+
+.dev-font {
+    font-family: 'Silkscreen', cursive;
+    font-size: 5.5vw;
+}
+
+.it-font {
+    font-family: 'Rowdies', cursive;
+    font-size: 5.5vw;
+}
+

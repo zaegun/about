@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,64 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #242424;
+  color: rgba(255,255,255,0.87)
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl sm:text-4xl text-left font-normal font-gasoek text-emerald-500 mb-6;
+  }
+  h2{
+    @apply text-xl sm:text-2xl text-left font-bold;
+  }
+  h3 {
+    @apply text-lg sm:text-xl text-left italic;
+  }
+  h4{
+    @apply text-base sm:text-lg mb-2 font-semibold text-emerald-500;
+  }
+}
+
+@layer components {
+  .node {
+    @apply m-auto w-5/6 mb-12 py-4
+  }
+  .desc{
+    @apply opacity-75
+  }
+}
+
+@keyframes fade {
+  0% { opacity: 0% }
+  100% { opacity: 100% }
+}
+
+.head-fade{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.0s;
+}
+
+.sub-head-fade{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.15s;
+}
+
+.content-fade{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
 }
