@@ -35,7 +35,7 @@ function Nav() {
                 <img className="w-12" src={logo}/>
             </Link>
             <div className="flex items-center sm:order-3">
-                <a href="mailto:gdbgetdata@outlook.com?subject=Resume Information" className="mr-6 px-6 py-2 text-lg font-semibold bg-emerald-500 text-white rounded-xl hover:bg-emerald-700">Contact</a>
+                <Link to="Contact" className="mr-6 px-6 py-2 text-lg font-semibold bg-emerald-500 text-white rounded-xl hover:bg-emerald-700">Contact</Link>
                 <div className="sm:hidden">
                     <button className="outline-none" onClick={toggleMenu}>
                     <svg className="w-6 h-6 text-gray-500"

@@ -32,7 +32,7 @@ export default [
     {
         id: 7,
         title: "Backups and Disaster Recovery",
-        description: "The systems were set up with backups and other redundancies to ensure company continuity. When the office suffered a total loss of systems due to fire, I was able to restore systems and operations were within the day.",
+        description: "The systems were set up with backups and other redundancies to ensure company continuity. When the office suffered a total loss of systems due to fire, I was able to restore systems and operations within the day.",
     },
     {
         id: 8,

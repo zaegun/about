@@ -5,11 +5,11 @@ function About() {
     const name = "Glenn Barker"
     return (
         <section className="node min-h-screen">
-            <div className="sm:grid sm:grid-cols-6 sm:m-auto sm:pb-20 text-left mb-12 sm:m-auto head-fade">
-                <div className="hidden sm:flex sm:col-span-2">
-                    <img src={profile} className="rounded-full w-80 h-80 m-auto" />
+            <div className="sm:grid sm:grid-cols-2 sm:m-auto sm:pb-20 text-left mb-12 sm:m-auto head-fade">
+                <div className="hidden sm:flex sm:col-span-1">
+                    <img src={profile} className="rounded-full sm:w-60 sm:h-60 sm:mt-24 sm:ml-4 lg:w-80 lg:h-80 lg:m-auto" />
                 </div>
-                <div className="sm:col-span-3 sm:col-start-3">
+                <div className="sm:col-span-1 sm:col-start-2">
                     <h1 className="text-left head-fade">Hi, I'm {name}</h1>
                     <p className="text-left mb-4 content-fade opacity-0">I am experienced IT professional, developer, graphic designer, and businessman with over 15 years of experience in those fields.</p>
                     <p className="text-left mb-4 content-fade opacity-0">Feel free to look around this site to find information on my education, certification, work history, and current skillset. If you would like a condensed version of my resume, you can download a PDF version by clicking below.</p>
