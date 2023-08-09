@@ -31,7 +31,7 @@ function Nav() {
     return (
     <nav className="mb-8 sm:mb-10 bg-zinc-900">
         <div className="px-6 py-4 sm:px-0 sm:py-4 flex justify-between items-center align-center sm:m-auto sm:w-5/6">
-            <Link to="/about/me" className="text-xl font-bold">
+            <Link to="/about/" className="text-xl font-bold">
                 <img className="w-12" src={logo}/>
             </Link>
             <div className="flex items-center sm:order-3">
@@ -53,7 +53,7 @@ function Nav() {
             </div>
             <div className="hidden sm:flex space-x-6 flex-row flex justify-center items-center sm:order-2">
                 <div className="space-x-6">
-                    <Link to="/about/me" className="text-lg font-semibold hover:text-gray-500">Me</Link>
+                    <Link to="/about/" className="text-lg font-semibold hover:text-gray-500">About</Link>
                     <Link to="/about/my_work" className="text-lg font-semibold hover:text-gray-500">Work</Link>
                     <Link to="/about/my_skills" className="text-lg font-semibold hover:text-gray-500">Skills</Link>
                 </div>
@@ -61,7 +61,7 @@ function Nav() {
             </div>
         </div>
         <div className="hidden sm:hidden space-x-12 pt-6 pb-6 bg-zinc-950" ref={subMenu}>
-            <Link to="/about/me" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Me</Link>
+            <Link to="/about/" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>About</Link>
             <Link to="/about/my_work" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Work</Link>
             <Link to="/about/my_skills" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Skills</Link>
         </div>

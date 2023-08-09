@@ -16,7 +16,7 @@ function App() {
         <Nav />
         <Routes>
             <Route index element={<About />} />
-            <Route path="/about/me" element={<About />} />
+            <Route path="/about/" element={<About />} />
             <Route path="about/my_work" element={<Work />} />
             <Route path="/about/my_skills" element={<Skills />} />
             <Route path="/about/my_contact" element={<Contact />} />
