@@ -16,11 +16,11 @@ function App() {
         <Nav />
         <Routes>
             <Route index element={<About />} />
-            <Route path="About" element={<About />} />
-            <Route path="Work" element={<Work />} />
-            <Route path="Skills" element={<Skills />} />
-            <Route path="Contact" element={<Contact />} />
-            <Route path="TY" element={<TY />} />
+            <Route path="/about/me" element={<About />} />
+            <Route path="about/my_work" element={<Work />} />
+            <Route path="/about/my_skills" element={<Skills />} />
+            <Route path="/about/my_contact" element={<Contact />} />
+            <Route path="/about/TY" element={<TY />} />
         </Routes>
         <Foot />
     </div>

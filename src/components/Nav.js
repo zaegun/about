@@ -31,11 +31,11 @@ function Nav() {
     return (
     <nav className="mb-8 sm:mb-10 bg-zinc-900">
         <div className="px-6 py-4 sm:px-0 sm:py-4 flex justify-between items-center align-center sm:m-auto sm:w-5/6">
-            <Link to="About" className="text-xl font-bold">
+            <Link to="/about/me" className="text-xl font-bold">
                 <img className="w-12" src={logo}/>
             </Link>
             <div className="flex items-center sm:order-3">
-                <Link to="Contact" className="mr-6 px-6 py-2 text-lg font-semibold bg-emerald-500 text-white rounded-xl hover:bg-emerald-700">Contact</Link>
+                <Link to="/about/Contact" className="mr-6 px-6 py-2 text-lg font-semibold bg-emerald-500 text-white rounded-xl hover:bg-emerald-700">Contact</Link>
                 <div className="sm:hidden">
                     <button className="outline-none" onClick={toggleMenu}>
                     <svg className="w-6 h-6 text-gray-500"
@@ -53,17 +53,17 @@ function Nav() {
             </div>
             <div className="hidden sm:flex space-x-6 flex-row flex justify-center items-center sm:order-2">
                 <div className="space-x-6">
-                    <Link to="About" className="text-lg font-semibold hover:text-gray-500">About</Link>
-                    <Link to="Work" className="text-lg font-semibold hover:text-gray-500">Work</Link>
-                    <Link to="Skills" className="text-lg font-semibold hover:text-gray-500">Skills</Link>
+                    <Link to="/about/me" className="text-lg font-semibold hover:text-gray-500">Me</Link>
+                    <Link to="/about/my_work" className="text-lg font-semibold hover:text-gray-500">Work</Link>
+                    <Link to="/about/my_skills" className="text-lg font-semibold hover:text-gray-500">Skills</Link>
                 </div>
                 
             </div>
         </div>
         <div className="hidden sm:hidden space-x-12 pt-6 pb-6 bg-zinc-950" ref={subMenu}>
-            <Link to="About" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>About</Link>
-            <Link to="Work" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Work</Link>
-            <Link to="Skills" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Skills</Link>
+            <Link to="/about/me" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Me</Link>
+            <Link to="/about/my_work" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Work</Link>
+            <Link to="/about/my_skills" className="text-lg font-semibold hover:text-gray-500" onClick={toggleMenu}>Skills</Link>
         </div>
     </nav>
    
